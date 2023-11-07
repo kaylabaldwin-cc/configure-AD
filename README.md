@@ -35,7 +35,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/rYVJNxe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Setup both virtual machines (Windows server and Windows 10) on Azure and connect both to Remote Desktop. Connect Client 1 to RD first and ping Domain controller's private IP address in Command Prompt. You'll notice "request timed out" due to DC's firewall ICMP4 settings. Login to remote desktop via DC's public IP address, enable firewall protocols and notice the ping from Client-1 was successful.
+Setup both virtual machines (Windows server and Windows 10) on Azure and connect both to Remote Desktop. Connect Client 1 (labuser) to RD first and ping Domain controller's private IP address in Command Prompt. You'll notice "request timed out" due to DC's firewall ICMP4 settings. Login to remote desktop via DC's public IP address (labuser), enable firewall protocols and notice the ping from Client-1 was successful.
 </p>
 <br />
 
@@ -43,7 +43,7 @@ Setup both virtual machines (Windows server and Windows 10) on Azure and connect
 <img src="https://i.imgur.com/jc72Kv3.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Install Active Directory
+Install Active Directory. Login to DC-1 and install Active Directory Domain Services. Promote as a DC: Setup a new forest as mydomain.com. Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <br />
 
