@@ -51,6 +51,7 @@ Install Active Directory. Login to DC-1 and install Active Directory Domain Serv
 <img src="https://i.imgur.com/f0QgSnT.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create an Admin and Normal User Account in Active Directory
+Create an Admin and Normal User Account in Active Directory. In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”. Create a new OU named “_ADMINS”. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”. Add jane_admin to the “Domain Admins” Security Group.
+
 </p>
 <br />
